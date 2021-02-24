@@ -2,16 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <title>SignUp</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/signup.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/favicon.png">
+    <link rel="instagram-icon" href="img/favicon.png">
 </head>
 <body>
-<h1>signUp</h1>
-<hr>
-<form th:action="@{/accounts/emailsignup/}" method="post">
-    <label for="username">username</label>
-    <input type="text" id="username" name="username" placeholder="input username"><br/>
-    <label for="password">password</label>
-    <input type="password" id="password" name="password" placeholder="input password">
-    <button type="submit">signUp</button>
+<form class="container" th:action="@{/accounts/emailsignup/}" method="post">
+    <img class="logo_instagram" src="img/logo_text.png" alt="instagram_logo">
+    <input type="text" class="input_signup" id="email" name="email" placeholder="휴대폰 번호 또는 이메일 주소"><br/>
+    <input type="text" class="input_signup" id="name" name="name" placeholder="성명"><br/>
+    <input type="text" class="input_signup" id="username" name="username" placeholder="사용자 이름"><br/>
+    <input type="password" class="input_signup" id="password" name="password" placeholder="비밀번호">
+    <button id="btn_signup" type="submit" disabled>가입</button>
 </form>
 </body>
 </html>
+
+    
