@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>profile</title>
+        <link href="style/common.css" rel="stylesheet" type="text/css" />
+        <link href="style/profile.css" rel="stylesheet" type="text/css" />
+        <!-- favicon -->
+        <link rel
+        ="icon" href="img/favicon.png">
+        <link rel="instagram-icon" href="img/favicon.png">
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav class = "first-nav">
+            <div class="nav-container">
+            <div class="nav-1">
+                <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
+                <div class="vl"></div> -->
+                <img class="logo_instagram_txt" src="img/logo_text.png" alt="logo_text">
+            </div>
+            <input id="searchInput" type="search" class="input-search" placeholder="검색">
+            <div class="nav-2">
+                <img src="img/home.png" alt="홈">
+                <img src="img/dm.png" alt="DM">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                <img class="pic" src="img/profile.png" alt="마이페이지">
+            </div>
+            </div>
+        </nav>
+        <main>
+            <div class = "profile">
+                <div class = "profile-left">
+                    <img class="img-profile pic" src="img/profile.png" alt="">
+                </div>
+                <div class = "profile-right">
+                    <div class = "first">
+                        <h2>
+                            nahyun27
+                            <a th:text="${username}"></a><br/>
+                        </h2>
+                        <button class = "btn-edit">프로필 편집</button>
+
+                    </div>
+                    <div class="second">
+                        <ul>
+                            <li>게시물 3</li>
+                            <li>팔로워 72</li>
+                            <li>팔로우 32</li>
+                        </ul>
+                    </div>
+                    <div>
+                        김나현
+                        <a th:text="${name}"></a><br/>
+                    </div>
+                </div>
+            </div>
+            <nav  class = "profile-nav">
+                <ul class = "nav-menu">
+                    <li> <a href="">게시물</a></li>
+                    <li> <a href="">IGTV</a></li>
+                    <li> <a href="">저장됨</a></li>
+                    <li> <a href="">태그됨</a></li>
+                </ul>
+            </nav>
+            <div class = "grid-container">
+                <img src="img/pic.jpeg" alt="pic">
+                <img src="img/pic.jpeg" alt="pic">
+                <img src="img/pic.jpeg" alt="pic">
+                <img src="img/pic.jpeg" alt="pic">
+                <img src="img/pic.jpeg" alt="pic">
+                
+            </div>
+        </main>
+        <footer>
+            <p class="insta-sccript">
+                소개 ∙ 도움말 ∙ 홍보 센터 ∙ API ∙ 채용 정보 ∙ 개인정보처리방침 ∙ 약관 ∙ 위치 ∙ 인기계정 ∙ 해시태그 ∙ 위치
+                <br><br>
+                한국어  © 2020 INSTAGRAM FROM FACEBOOK
+            </p>
+        </footer>
+    </body>
+</html>
+
+
+    
